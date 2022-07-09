@@ -1,8 +1,12 @@
+import ItemCount from '../components/ItemCount'
 import '../css/ItemListContainer.css'
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   return (
-    <div className="container mx-auto contenedor">
-        <h1 className='texto'>{props.texto}</h1>
+    <div className='contenedor'>
+      <ItemCount 
+      stock="3"
+      initial= '1'
+      />
     </div>
   )
 }
